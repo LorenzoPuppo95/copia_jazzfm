@@ -1,0 +1,109 @@
+*{
+    border: 3px;
+    border-color: red;
+}
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #ffcc00;
+    height: 100vh;
+}
+
+header div span {
+    display: block;
+}
+
+.grid-header{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    "h-logo h-play"
+    "h-song h-play";
+}
+
+.div-h-1{
+    place-self: start;
+    grid-area: h-logo;
+    padding: 20px;
+}
+
+.div-h-2{
+    place-self: end start;
+    grid-area: h-song;
+    padding: 20px;
+}
+
+.div-h-3{
+    /* place-self: start; */
+    grid-area: h-play;
+    background-image: url("https://jazzfm.ro/assets/images/assets_play.svg");
+    background-repeat: no-repeat;
+    background-size: contain; 
+    
+}
+
+.h-span{
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 1px;
+}
+
+.h-singer{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.h-song{
+    font-size: 22px;
+    line-height: 25px;
+}
+
+footer {
+    height: 100vh;
+}
+
+.grid-footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;   
+    grid-template-areas: 
+    "div-f-1 div-f-2";
+    
+}
+
+.div-f-1{
+    background-color: #660099;
+    place-self: center;
+    grid-area: div-f-1;
+    padding: 20px;
+}
+
+.div-f-2{
+    background-color: #ff3333;
+    place-self: center;
+    grid-area: div-f-2;
+    padding: 20px;
+}
+
+/* .rotate img{
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    transition: 0.7sec;
+    -webkit-transition: 0.7sec;
+}
+
+.rotate:hover img{
+    transform: rotateX(45deg);
+    -webkit-transform: rotateX(45deg);
+    transition: 0.7sec;
+    -webkit-transition: 0.7sec;
+} */
