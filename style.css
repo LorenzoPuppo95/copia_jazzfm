@@ -1,93 +1,139 @@
-*{
-    border: 3px;
-    border-color: red;
+body,
+html {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    color: black;
 }
 
+h1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.85;
+    text-transform: uppercase;
+    letter-spacing: -10px;
+    font-size: 158px;
+    font-weight: 700;
+}
 
-body, html{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
+h2 .number,
+h2 .letter {
+    font-weight: lighter;
+}
+
+h2 .number {
+    font-size: 60px;
+    padding-right: 30px;
+}
+
+h2 .letter {
+    font-size: 110px;
 }
 
 header {
     background-color: #ffcc00;
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 header div span {
     display: block;
 }
 
-.grid-header{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 50%);
-    grid-template-areas: 
-    "h-logo h-play"
-    "h-song h-play";
+
+header section {
+    width: 50%;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
-.div-h-1{
-    place-self: start;
-    grid-area: h-logo;
-    padding: 20px;
-}
-
-.div-h-2{
-    place-self: end start;
-    grid-area: h-song;
-    padding: 20px;
-}
-
-.div-h-3{
-    /* place-self: start; */
-    grid-area: h-play;
+.play {
     background-image: url("https://jazzfm.ro/assets/images/assets_play.svg");
     background-repeat: no-repeat;
-    background-size: contain; 
-    
+    background-size: contain;
 }
 
-.h-span{
+.song {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.h-span {
     font-size: 16px;
     line-height: 30px;
     padding-bottom: 1px;
 }
 
-.h-singer{
+.h-singer {
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
 }
 
-.h-song{
+.h-song {
     font-size: 22px;
     line-height: 25px;
 }
+
+.image {
+    display: flex;
+    background-color: #660099;
+    align-items: end;
+}
+
+section.bullet {
+    background-color: #ffcc00;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.letter-j img {
+    width: 410px;
+    height: 410px;
+    margin-top: -120px;
+}
+
+div.bullet {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: black;
+    height: 118px;
+    width: 118px;
+    border-radius: 59px;
+}
+
+.fm {}
+
+
+
+
+
+
 
 footer {
     height: 100vh;
 }
 
-.grid-footer{
-    display:grid;
-    grid-template-columns: 1fr 1fr;   
-    grid-template-areas: 
-    "div-f-1 div-f-2";
-    
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "div-f-1 div-f-2";
+
 }
 
-.div-f-1{
+.div-f-1 {
     background-color: #660099;
     place-self: center;
     grid-area: div-f-1;
     padding: 20px;
 }
 
-.div-f-2{
+.div-f-2 {
     background-color: #ff3333;
     place-self: center;
     grid-area: div-f-2;
