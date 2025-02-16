@@ -34,7 +34,35 @@ h2 .letter {
     justify-content: space-between;
 }
 
-.col1 {}
+.col70 {
+    width: 70%;
+}
+
+.col50 {
+    width: 50%;
+}
+
+.col30 {
+    width: 33%;
+}
+
+.row-list {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    font-weight: lighter;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    display: flex;
+}
+
+a,
+a:hover,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: black;
+}
 
 header {
     background-color: #ffcc00;
@@ -55,55 +83,55 @@ header section {
     box-sizing: border-box;
 }
 
-.play {
+header .play {
     background-image: url("https://jazzfm.ro/assets/images/assets_play.svg");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.song {
+header .song {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     padding: 20px;
 }
 
-.h-span {
+header .h-span {
     font-size: 16px;
     line-height: 30px;
     padding-bottom: 1px;
 }
 
-.h-singer {
+header .h-singer {
     font-size: 30px;
     line-height: 40px;
     font-weight: 700;
 }
 
-.h-song {
+header .h-song {
     font-size: 22px;
     line-height: 25px;
 }
 
-.image {
+section.img-cat {
     display: flex;
     background-color: #660099;
     align-items: end;
 }
 
-section.bullet {
+section.letter-j {
     background-color: #ffcc00;
     padding: 30px 20px;
     position: relative;
 }
 
-.letter-j img {
+.letter-j .img-letter-j img {
     width: 521px;
     height: 521px;
     margin-top: -150px;
 }
 
-div.bullet {
+.letter-j div.bullet {
     position: absolute;
     top: 30px;
     right: 20px;
@@ -113,40 +141,230 @@ div.bullet {
     border-radius: 75px;
 }
 
-.fm {
+.letter-j .fm {
     margin-top: 400px;
+    text-align: left;
+    border-bottom: 1px solid black;
 }
 
 
+section.letter-a {
+    background-color: #ffcc00;
+    padding: 30px 20px;
+    position: relative;
+    padding-top: 80px;
+}
+
+.letter-a .img-letter-a img {
+    width: 825px;
+    height: 635px;
+}
+
+.letter-a .list {
+    border-top: 1px solid black;
+}
+
+.letter-z {
+    background-color: #ffcc00;
+    padding: 30px 20px;
+}
+
+.letter-z .devices h2 {
+    text-align: right;
+    padding-right: 130px;
+    border-bottom: 1px solid black;
+}
+
+.letter-z .list .row-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 10px;
+
+}
+
+.letter-z .list .name {
+    font-size: 90px;
+    font-weight: lighter;
+}
+
+.letter-z .list .command {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.letter-z .row-img-z {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    padding-bottom: 200px;
+    padding-top: 40px;
+}
+
+.letter-z .row-img-z img {
+    flex: 1;
+    width: 200px;
+}
+
+section.img-ppl {
+    display: flex;
+    background-color: #660099;
+    align-items: end;
+}
+
+section.img-ppl img {
+    width: 100%;
+}
+
+section.schedule {
+    position: relative;
+    padding: 20px;
+}
+
+.schedule div.bullet {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+}
+
+.schedule .row-list {
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.schedule .mon {
+    margin-top: 400px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid black;
+
+}
+
+.schedule .title {
+    text-align: left;
+
+}
+
+section.jazz {
+    background: #0099ff;
+    padding: 20px;
+    color: white;
+}
+
+section.jazz .row-list {
+    border-bottom: 1px solid white;
+}
+
+.jazz .img-sheep {
+    position: sticky;
+    top: 0px
+}
+
+.jazz .img-sheep img {
+    width: 466px;
+    height: 633px;
+}
+
+section.img-ear {
+    display: flex;
+    background-color: #660099;
+    align-items: end;
+}
+
+section.img-ear img {
+    width: 200px;
+    flex: 1;
+}
+
+section.contact {
+    background-color: #ffcc00;
+    padding: 30px 20px;
+    position: relative;
+}
+
+.contact h1 {
+    position: sticky;
+    top: 0px;
+}
 
 
+.contact div.bullet {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+}
 
+.contact .list {
+    margin-top: 400px;
+    border-top: 1px solid black;
+}
 
+.contact .row-list.address {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact .row-list.facebook {
+    font-size: 110px;
+}
+
+.contact .row-list.eye {
+    justify-content: center;
+}
+
+.contact .row-list.terms,
+.contact .row-list.privacy {
+    font-size: 40px;
+}
+
+.contact .row-list.copy {
+    font-size: 26px;
+    border-bottom: none;
+}
 
 footer {
-    height: 100vh;
-}
-
-.grid-footer {
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-        "div-f-1 div-f-2";
-
+        "mouth arrow";
 }
 
-.div-f-1 {
+footer .mouth {
     background-color: #660099;
-    place-self: center;
-    grid-area: div-f-1;
-    padding: 20px;
+    grid-area: mouth;
 }
 
-.div-f-2 {
+footer .arrow {
     background-color: #ff3333;
-    place-self: center;
-    grid-area: div-f-2;
-    padding: 20px;
+    grid-area: arrow;
+}
+
+footer .mouth,
+footer .arrow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .mouth img {
+    width: 300px;
+    height: 350px;
+}
+
+footer .arrow img {
+    width: 400px;
+    height: 400px;
 }
 
 /* .rotate img{
